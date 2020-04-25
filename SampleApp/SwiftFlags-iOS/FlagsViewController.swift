@@ -1,12 +1,13 @@
 //
 //  FlagsViewController.swift
-//  SwiftFlags
+//  SwiftFlags-iOS
 //
 //  Created by Busi Andrea on 25/04/2020.
 //  Copyright © 2020 BubiDevs. All rights reserved.
 //
 
 import UIKit
+import SwiftFlags
 
 class FlagsViewController: UITableViewController {
 
@@ -31,7 +32,7 @@ class FlagsViewController: UITableViewController {
         
         let country = countries[indexPath.row]
         if let flag = SwiftFlags.flag(for: country) {
-            cell.textLabel?.text = "\(country) \(flag)"
+            cell.textLabel?.text = "\(flag) \(country.capitalized)"
             cell.detailTextLabel?.text = nil
         } else {
             cell.textLabel?.text = "\(country)"
