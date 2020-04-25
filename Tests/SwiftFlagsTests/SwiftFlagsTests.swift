@@ -2,14 +2,26 @@ import XCTest
 @testable import SwiftFlags
 
 final class SwiftFlagsTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(SwiftFlags().text, "Hello, World!")
+    
+    func testFlags() {
+        // test some random flags
+        XCTAssertNil(SwiftFlags.flag(for: "italaaa"))
+        XCTAssertEqual(SwiftFlags.flag(for: "it"), "🇮🇹")
+        XCTAssertEqual(SwiftFlags.flag(for: "united states"), "🇺🇸")
+        XCTAssertEqual(SwiftFlags.flag(for: "FrAnCe"), "🇫🇷")
+        XCTAssertNotEqual(SwiftFlags.flag(for: "japan"), "🇨🇳")
+    }
+    
+    func testCountryCodes() {
+        // test some country codes
+        XCTAssertEqual(SwiftFlags.countryCode(for: "italy"), "IT")
+        XCTAssertEqual(SwiftFlags.countryCode(for: "united kingdom"), "GB")
+        XCTAssertNotEqual(SwiftFlags.countryCode(for: "united kingdom"), "UK")
+        XCTAssertEqual(SwiftFlags.countryCode(for: "japan"), "JP")
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testFlags", testFlags),
+        ("testCountryCodes", testCountryCodes)
     ]
 }

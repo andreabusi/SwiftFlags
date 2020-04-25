@@ -17,6 +17,8 @@
 		DCC571B624549F3B00692503 /* SwiftFlags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC571AD24549F2B00692503 /* SwiftFlags.framework */; };
 		DCC571B724549F3B00692503 /* SwiftFlags.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCC571AD24549F2B00692503 /* SwiftFlags.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCC571BC24549F5200692503 /* SwiftFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC571BB24549F5200692503 /* SwiftFlags.swift */; };
+		DCCD77902454A20D00CCC426 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD778E2454A20D00CCC426 /* XCTestManifests.swift */; };
+		DCCD77912454A20D00CCC426 /* SwiftFlagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCD778F2454A20D00CCC426 /* SwiftFlagsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		DCC571AF24549F2B00692503 /* SwiftFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftFlags.h; sourceTree = "<group>"; };
 		DCC571B024549F2B00692503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC571BB24549F5200692503 /* SwiftFlags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftFlags.swift; path = ../../Sources/SwiftFlags/SwiftFlags.swift; sourceTree = "<group>"; };
+		DCCD77862454A1B500CCC426 /* SwiftFlags-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftFlags-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCCD778A2454A1B500CCC426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCCD778E2454A20D00CCC426 /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XCTestManifests.swift; path = ../../Tests/SwiftFlagsTests/XCTestManifests.swift; sourceTree = "<group>"; };
+		DCCD778F2454A20D00CCC426 /* SwiftFlagsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftFlagsTests.swift; path = ../../Tests/SwiftFlagsTests/SwiftFlagsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCCD77832454A1B500CCC426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +95,7 @@
 			children = (
 				DCC571AE24549F2B00692503 /* SwiftFlags */,
 				DCC5719524549F0700692503 /* SwiftFlags-iOS */,
+				DCCD77872454A1B500CCC426 /* SwiftFlags-Tests */,
 				DC6193D52454717C00845FC7 /* Products */,
 				DCC571B524549F3B00692503 /* Frameworks */,
 			);
@@ -92,6 +106,7 @@
 			children = (
 				DCC5719424549F0700692503 /* SwiftFlags-iOS.app */,
 				DCC571AD24549F2B00692503 /* SwiftFlags.framework */,
+				DCCD77862454A1B500CCC426 /* SwiftFlags-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +140,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCCD77872454A1B500CCC426 /* SwiftFlags-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD778F2454A20D00CCC426 /* SwiftFlagsTests.swift */,
+				DCCD778E2454A20D00CCC426 /* XCTestManifests.swift */,
+				DCCD778A2454A1B500CCC426 /* Info.plist */,
+			);
+			path = "SwiftFlags-Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +203,23 @@
 			productReference = DCC571AD24549F2B00692503 /* SwiftFlags.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		DCCD77852454A1B500CCC426 /* SwiftFlags-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCCD778D2454A1B500CCC426 /* Build configuration list for PBXNativeTarget "SwiftFlags-Tests" */;
+			buildPhases = (
+				DCCD77822454A1B500CCC426 /* Sources */,
+				DCCD77832454A1B500CCC426 /* Frameworks */,
+				DCCD77842454A1B500CCC426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftFlags-Tests";
+			productName = "SwiftFlags-Tests";
+			productReference = DCCD77862454A1B500CCC426 /* SwiftFlags-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +236,9 @@
 					DCC571AC24549F2B00692503 = {
 						CreatedOnToolsVersion = 11.4.1;
 						LastSwiftMigration = 1140;
+					};
+					DCCD77852454A1B500CCC426 = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
@@ -212,6 +257,7 @@
 			targets = (
 				DCC571AC24549F2B00692503 /* SwiftFlags */,
 				DCC5719324549F0700692503 /* SwiftFlags-iOS */,
+				DCCD77852454A1B500CCC426 /* SwiftFlags-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,6 +274,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DCC571AB24549F2B00692503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCD77842454A1B500CCC426 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,6 +305,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC571BC24549F5200692503 /* SwiftFlags.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCD77822454A1B500CCC426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCD77902454A20D00CCC426 /* XCTestManifests.swift in Sources */,
+				DCCD77912454A20D00CCC426 /* SwiftFlagsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +560,44 @@
 			};
 			name = Release;
 		};
+		DCCD778B2454A1B500CCC426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E27HBR7TL2;
+				INFOPLIST_FILE = "SwiftFlags-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.bubidevs.SwiftFlags-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCCD778C2454A1B500CCC426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E27HBR7TL2;
+				INFOPLIST_FILE = "SwiftFlags-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.bubidevs.SwiftFlags-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -524,6 +624,15 @@
 			buildConfigurations = (
 				DCC571B324549F2B00692503 /* Debug */,
 				DCC571B424549F2B00692503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCCD778D2454A1B500CCC426 /* Build configuration list for PBXNativeTarget "SwiftFlags-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCCD778B2454A1B500CCC426 /* Debug */,
+				DCCD778C2454A1B500CCC426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
