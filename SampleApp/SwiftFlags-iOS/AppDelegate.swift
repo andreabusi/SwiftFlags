@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftFlags
+//  SwiftFlags-iOS
 //
 //  Created by Busi Andrea on 25/04/2020.
 //  Copyright © 2020 BubiDevs. All rights reserved.
