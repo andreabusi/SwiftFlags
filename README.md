@@ -18,7 +18,7 @@ class func countryCode(for country: String) -> String?
 
 ## Examples
 
-Here are some examples, you can pass both a country name or a country code.
+Here are some examples to get the emoji flag for a country. You can pass both a country name or a country code.
 
 ```swift
 // Returns 🇮🇹
@@ -33,27 +33,43 @@ let _ = SwiftFlags.flag(for: "JP")
 let _ = SwiftFlags.flag(for: "Korea, South")
 ```
 
+SwiftFlags also provide the ability to return the ISO country code for a given country:
+
+```swift
+// Returns 'IT'
+let _ = SwiftFlags.flag(for: "italy")
+// Returns 'US'
+let _ = SwiftFlags.flag(for: "United States")
+// Returns nil
+let _ = SwiftFlags.flag(for: "England")
+```
+
 ## Requirements
 
 The latest version of SwiftFlags require:
 
 * Swift 5
+* XCode 11+ (in order to use Swift Package Manager)
 
 ## Installation
 
-SwiftFlags is available via CocoaPods, Swift Package Manager or you can directly embeed the library inside your project
+SwiftFlags is available via CocoaPods, Swift Package Manager or you can directly embeed the library inside your project.
 
 ### CocoaPods
+
+Add the following to your Podfile:
 
 `pod 'SwiftFlags'`
 
 ### Swift Package Manager
 
-Coming soon...
+Add the repo URL using the Swift Package Manager built inside Xcode:
+
+`https://github.com/BubiDevs/SwiftFlags.git`
 
 ### Manual installation
 
-Just drag and drop the `SwiftFlags.swift` file inside your project
+Just drag and drop the files under the `Sources` folder inside your project.
 
 ## Credits
 
@@ -64,5 +80,5 @@ This library is based on the work of two existing library:
 
 ## ToDo
 
-* [ ] Add Swift Package Manager support
+* [x] Add Swift Package Manager support
 * [ ] Improve ObjC interoperability
