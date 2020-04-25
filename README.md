@@ -22,15 +22,15 @@ Here are some examples, you can pass both a country name or a country code.
 
 ```swift
 // Returns 🇮🇹
-let _ = SwiftFlag.flag(for: "italy")
+let _ = SwiftFlags.flag(for: "italy")
 // Returns 🇺🇸
-let _ = SwiftFlag.flag(for: "United States")
+let _ = SwiftFlags.flag(for: "United States")
 // Returns nil
-let _ = SwiftFlag.flag(for: "England")
+let _ = SwiftFlags.flag(for: "England")
 // Returns 🇯🇵
-let _ = SwiftFlag.flag(for: "JP")
+let _ = SwiftFlags.flag(for: "JP")
 // Returns 🇰🇷
-let _ = SwiftFlag.flag(for: "Korea, South")
+let _ = SwiftFlags.flag(for: "Korea, South")
 ```
 
 ## Requirements
@@ -49,7 +49,7 @@ SwiftFlags is available via CocoaPods, Swift Package Manager or you can directly
 
 ### Swift Package Manager
 
-// todo
+Coming soon...
 
 ### Manual installation
 
