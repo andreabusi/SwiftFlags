@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
    s.social_media_url      = "https://twitter.com/bubidevs"
    s.ios.deployment_target = "10.0"
    s.source                = { :git => "https://github.com/BubiDevs/SwiftFlags.git", :tag => s.version.to_s }
-   s.source_files          = 'SwiftFlags/Sources/**/*.swift'
+   s.source_files          = 'Sources/**/*.swift'
    s.frameworks            = "Foundation"
    s.swift_versions        = ['5.0', '5.1']
 end
