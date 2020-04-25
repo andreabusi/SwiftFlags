@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
    s.name                  = "SwiftFlags"
-   s.version               = "1.0.1"
+   s.version               = "1.1.0"
    s.summary               = "Simple Swift library to get emoji flag from a country name or country code (ISO 3166-1)."
    s.homepage              = "https://github.com/BubiDevs/SwiftFlags.git"
    s.license               = { :type => "MIT", :file => "LICENSE" }
