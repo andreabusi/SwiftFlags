@@ -316,11 +316,12 @@ final public class SwiftFlags {
         }
         
         // search for an inexact match
-        var results = [String]()
+        // using a set, we are going to keep only one entry for each country code found
+        var results = Set<String>()
         for (countryCode, countryNames) in countries {
             for countryName in countryNames {
                 if compare(input: input, countryName: countryName) {
-                    results.append(countryCode)
+                    results.insert(countryCode)
                 }
             }
         }
