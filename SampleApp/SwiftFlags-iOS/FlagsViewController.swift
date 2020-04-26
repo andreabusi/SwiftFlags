@@ -11,7 +11,7 @@ import SwiftFlags
 
 class FlagsViewController: UITableViewController {
 
-    private let countries = ["it", "japan", "united states", "england"]
+    private let countries = ["it", "japan", "united states", "england", "iran", "united", "russia"]
     
     // MARK: - View Lifecycle
     
