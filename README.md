@@ -6,7 +6,7 @@ SwiftFlags is a simple library to get emoji flag from a country name or a countr
 
 ## Usage
 
-SwiftFlags comes with some statis methods that you can use:
+SwiftFlags comes with some static methods that you can use:
 
 ```swift
 class func flag(for country: String) -> String?
@@ -18,7 +18,7 @@ class func countryCode(for country: String) -> String?
 
 ## Examples
 
-Here are some examples to get the emoji flag for a country. You can pass both a country name or a country code.
+Here are some examples to get the emoji flag for a country. You can pass both a country name or a country code:
 
 ```swift
 // Returns 🇮🇹
@@ -77,6 +77,8 @@ This library is based on the work of two existing library:
 
 * [country-emoji](https://github.com/meeDamian/country-emoji/blob/master/src/lib.js), available for JavaScript
 * [flag-emoji-from-country-code](https://github.com/bendodson/flag-emoji-from-country-code), a great snippet to get the emoji flag from an ISO 3166-1 region code
+
+Thanks guys for your work!
 
 ## ToDo
 
