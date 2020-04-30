@@ -371,19 +371,18 @@ final public class SwiftFlags {
         string.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
-    private class func emojiFlag(for countryCode: String) -> String? {
-        let code = countryCode.uppercased()
-
-        guard Locale.isoRegionCodes.contains(code) else {
-            return nil
-        }
-
+    /// Converts an ISO country code into the emoji flag (unicode)
+    /// Note: no check performed on the validity of the countryCode passed as input
+    /// - Parameter countryCode: Country code to convert
+    /// - Returns: Emoji flag
+    private class func emojiFlag(for countryCode: String) -> String {
+        let baseFlagScalar: UInt32 = 127397
         var flagString = ""
-        for s in code.unicodeScalars {
-            guard let scalar = UnicodeScalar(127397 + s.value) else {
+        for scalarValue in countryCode.uppercased().unicodeScalars {
+            guard let scalar = UnicodeScalar(baseFlagScalar + scalarValue.value) else {
                 continue
             }
-            flagString.append(String(scalar))
+            flagString.unicodeScalars.append(scalar)
         }
         return flagString
     }
