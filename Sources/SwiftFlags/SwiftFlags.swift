@@ -22,8 +22,8 @@
 
 import Foundation
 
-
-final public class SwiftFlags {
+@objc
+final public class SwiftFlags: NSObject {
     
     private static let countries: [String: [String]] = [
       "AD": ["Andorra", "Andorran"],
@@ -284,7 +284,7 @@ final public class SwiftFlags {
     ///
     /// - Parameter country: Name or ISO 3166-1 code of the country
     /// - Returns: Emoji flag if available, nil otherwise
-    public class func flag(for country: String) -> String? {
+    @objc public class func flag(for country: String) -> String? {
         if let code = countryCode(for: country) {
             return emojiFlag(for: code)
         }
@@ -295,7 +295,7 @@ final public class SwiftFlags {
     /// Returns only the country code for the given country.
     /// - Parameter country: Name of the country
     /// - Returns: ISO 3166-1 code for the given country, nil if no math found
-    public class func countryCode(for country: String) -> String? {
+    @objc public class func countryCode(for country: String) -> String? {
         let input = trimmed(string: country).lowercased()
         if input.isEmpty {
             return nil
