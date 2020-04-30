@@ -83,4 +83,4 @@ Thanks guys for your work!
 ## ToDo
 
 * [x] Add Swift Package Manager support
-* [ ] Improve ObjC interoperability
+* [x] Improve ObjC interoperability
