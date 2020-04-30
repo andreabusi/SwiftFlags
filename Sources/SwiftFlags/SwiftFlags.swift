@@ -337,31 +337,10 @@ final public class SwiftFlags {
     
     // MARK: - Private
     
-    private class func trimmed(string: String) -> String {
-        string.trimmingCharacters(in: .whitespacesAndNewlines)
-    }
-    
     private class func isCode(_ code: String) -> Bool {
         countries[code.uppercased()] != nil
     }
-    
-    private class func emojiFlag(for countryCode: String) -> String? {
-        let code = countryCode.uppercased()
-
-        guard Locale.isoRegionCodes.contains(code) else {
-            return nil
-        }
-
-        var flagString = ""
-        for s in code.unicodeScalars {
-            guard let scalar = UnicodeScalar(127397 + s.value) else {
-                continue
-            }
-            flagString.append(String(scalar))
-        }
-        return flagString
-    }
-    
+        
     private class func compare(input anInput: String, countryName aCountryName: String) -> Bool {
         let input = anInput.lowercased()
         let countryName = aCountryName.lowercased()
@@ -384,5 +363,28 @@ final public class SwiftFlags {
         }
         
         return false
+    }
+    
+    // MARK: - Helpers
+    
+    private class func trimmed(string: String) -> String {
+        string.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    private class func emojiFlag(for countryCode: String) -> String? {
+        let code = countryCode.uppercased()
+
+        guard Locale.isoRegionCodes.contains(code) else {
+            return nil
+        }
+
+        var flagString = ""
+        for s in code.unicodeScalars {
+            guard let scalar = UnicodeScalar(127397 + s.value) else {
+                continue
+            }
+            flagString.append(String(scalar))
+        }
+        return flagString
     }
 }
