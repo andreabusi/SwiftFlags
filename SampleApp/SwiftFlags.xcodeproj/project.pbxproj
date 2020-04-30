@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCA2C844245B06A3002534BC /* SwiftFlags.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DCA2C843245B06A3002534BC /* SwiftFlags.podspec */; };
 		DCC5719724549F0700692503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5719624549F0700692503 /* AppDelegate.swift */; };
 		DCC5719924549F0700692503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5719824549F0700692503 /* SceneDelegate.swift */; };
 		DCC5719B24549F0700692503 /* FlagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5719A24549F0700692503 /* FlagsViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DCA2C843245B06A3002534BC /* SwiftFlags.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SwiftFlags.podspec; path = ../SwiftFlags.podspec; sourceTree = "<group>"; };
 		DCC5719424549F0700692503 /* SwiftFlags-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftFlags-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC5719624549F0700692503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC5719824549F0700692503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		DC6193CB2454717C00845FC7 = {
 			isa = PBXGroup;
 			children = (
+				DCA2C843245B06A3002534BC /* SwiftFlags.podspec */,
 				DCC571AE24549F2B00692503 /* SwiftFlags */,
 				DCC5719524549F0700692503 /* SwiftFlags-iOS */,
 				DCCD77872454A1B500CCC426 /* SwiftFlags-Tests */,
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA2C844245B06A3002534BC /* SwiftFlags.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
