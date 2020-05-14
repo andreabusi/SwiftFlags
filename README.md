@@ -37,11 +37,11 @@ SwiftFlags also provide the ability to return the ISO country code for a given c
 
 ```swift
 // Returns 'IT'
-let _ = SwiftFlags.flag(for: "italy")
+let _ = SwiftFlags.countryCode(for: "italy")
 // Returns 'US'
-let _ = SwiftFlags.flag(for: "United States")
+let _ = SwiftFlags.countryCode(for: "United States")
 // Returns nil
-let _ = SwiftFlags.flag(for: "England")
+let _ = SwiftFlags.countryCode(for: "England")
 ```
 
 ## Requirements
