@@ -1,6 +1,9 @@
 # SwiftFlags
 
 ![CocoaPod version](https://img.shields.io/cocoapods/v/SwiftFlags)
+[![Apple Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS-red.svg)](https://github.com/BubiDevs/SwiftFlags)
+[![Language](https://img.shields.io/badge/language-Swift%20-red.svg)](https://github.com/BubiDevs/SwiftFlags)
+
 
 SwiftFlags is a simple library to get emoji flag from a country name or a country code (ISO 3166-1).
 
