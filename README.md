@@ -1,8 +1,7 @@
 # SwiftFlags
 
-![CocoaPod version](https://img.shields.io/cocoapods/v/SwiftFlags)
-[![Apple Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS-red.svg)](https://github.com/BubiDevs/SwiftFlags)
-[![Language](https://img.shields.io/badge/language-Swift%20-red.svg)](https://github.com/BubiDevs/SwiftFlags)
+[![Apple Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS-red.svg)](https://github.com/andreabusi/SwiftFlags)
+[![Language](https://img.shields.io/badge/language-Swift%20-red.svg)](https://github.com/andreabusi/SwiftFlags)
 
 
 SwiftFlags is a simple library to get emoji flag from a country name or a country code (ISO 3166-1).
@@ -56,19 +55,13 @@ The latest version of SwiftFlags require:
 
 ## Installation
 
-SwiftFlags is available via CocoaPods, Swift Package Manager or you can directly embeed the library inside your project.
-
-### CocoaPods
-
-Add the following to your Podfile:
-
-`pod 'SwiftFlags'`
+SwiftFlags is available via Swift Package Manager or you can directly embeed the library inside your project.
 
 ### Swift Package Manager
 
 Add the repo URL using the Swift Package Manager built inside Xcode:
 
-`https://github.com/BubiDevs/SwiftFlags.git`
+`https://github.com/andreabusi/SwiftFlags.git`
 
 ### Manual installation
 
